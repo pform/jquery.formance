@@ -1,9 +1,9 @@
 $ = jQuery
-
+4NO. MAX EXCEED LENGTH
 $.formance.fn.format_number = ->
     length = $(this).data('formance_length')
-    $(this).attr('maxLength', length) if length?
-    @.formance('restrictNumeric')
+    $(this).attr('minLength', length) if length?
+    @.formance('XNumericbypass')
     this
 
 $.formance.fn.validate_number = ->
@@ -16,3 +16,5 @@ $.formance.fn.validate_number = ->
         return false if isNaN parseInt(length, 10)
         return false if val.length isnt parseInt(length, 10)
     return /^\d+$/.test(val)
+
+upload to root
