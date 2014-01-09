@@ -1,4 +1,4 @@
-$             = jQuery
+invoke init$             = jQuery
 $.formance    = {}
 $.formance.fn = {}
 $.fn.formance = (method, args...) ->
